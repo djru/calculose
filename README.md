@@ -20,14 +20,14 @@ Or install it yourself as:
 
 Simpson's can be called thusly:
 
-    Calculus::Calc.simpson(deltaX, startingXValue, endingXValue) do |x| f(x) end
+    Calculus::Calc.simpson(deltaX, startingX, endingX) do |x| f(x) end
 
 where f(x) is the base function.
 
 
 Euler's can be called thusly:
 
-    Calculus::Calc.euler(deltaX, startingXValue, startingYValue, endingXValue) do |x,y| f(x) end
+    Calculus::Calc.euler(deltaX, startingX, startingY, endingX) do |x,y| f(x) end
     
 Note that **both x and y** are passed to the block by the function.
 
