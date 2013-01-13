@@ -1,6 +1,6 @@
 # Calculus
 
-TODO: Write a gem description
+The Calculus gem implements two methods for estimating the value of an antiderivative over an interval. The gem implements two methods: [Simpsons's Method](http://en.wikipedia.org/wiki/Simpson's_rule) and [Euler's Method](http://en.wikipedia.org/wiki/Euler_method). This gem was the product of frustration at the monotonous nature of summing integrals, and the unwieldily interfaces and UXs on most graphing calculators.
 
 ## Installation
 
@@ -18,12 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Simpson's can be called thusly: ```Calculus::Calc.simpson(deltaX, startingXValue, endingXValue) do |x| f(x) end```, where f(x) is the base function.
 
-## Contributing
+Euler's can be called thusly: ```Calculus::Calc.euler(deltaX, startingXValue, startingYValue, endingXValue) do |x,y| f(x) end```. Note that **both x and y** are passed to the block by the function.
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+##To do:
+
+* CLI
+* More algorithms
