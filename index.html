@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Calculus by orzogen</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Calculus</h1>
+        <p>A handful of algorithms for estimating antiderivative values.</p>
+
+        <p class="view"><a href="https://github.com/orzogen/calculus">View the Project on GitHub <small>orzogen/calculus</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/orzogen/calculus/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/orzogen/calculus/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/orzogen/calculus">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Calculus</h1>
+
+<p>The Calculus gem implements two methods for estimating the value of an antiderivative over an interval. The gem implements two methods: <a href="http://en.wikipedia.org/wiki/Simpson's_rule">Simpsons's Method</a> and <a href="http://en.wikipedia.org/wiki/Euler_method">Euler's Method</a>. This gem was the product of frustration at the monotonous nature of summing integrals, and the unwieldily interfaces and UXs on most graphing calculators.</p>
+
+<h2>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<pre><code>gem 'calculus'
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install calculus
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>Simpson's can be called thusly:</p>
+
+<pre><code>Calculus::Calc.simpson(deltaX, startingX, endingX) do |x| f(x) end
+</code></pre>
+
+<p>where f(x) is the base function.</p>
+
+<p>Euler's can be called thusly:</p>
+
+<pre><code>Calculus::Calc.euler(deltaX, startingX, startingY, endingX) do |x,y| f(x) end
+</code></pre>
+
+<p>Note that <strong>both x and y</strong> are passed to the block by the function.</p>
+
+<h2>To do</h2>
+
+<ul>
+<li>CLI</li>
+<li>More algorithms</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/orzogen">orzogen</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
