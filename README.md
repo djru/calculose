@@ -6,7 +6,7 @@ The Calculose gem implements two methods for estimating the value of an antideri
 
 Add this line to your application's Gemfile:
 
-    gem 'calculus'
+    gem 'calculose'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install calculus
+    $ gem install calculose
 
 ## Usage
 
